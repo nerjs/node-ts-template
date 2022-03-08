@@ -1,0 +1,38 @@
+{
+  "name": "node-ts-template",
+  "version": "1.0.0",
+  "description": "Node.js typescript template",
+  "repository": "git@github.com:nerjs/node-ts-template.git",
+  "author": "nerjs <nerjs.stap@gmail.com>",
+  "main": "dist/index.js",
+  "exports": {
+    ".": "./dist/index.js"
+  },
+  "license": "MIT",
+  "scripts": {
+    "lint": "eslint ./src/*.ts",
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "start": "nodemon ./dist",
+    "start:prod": "npm run build && node ./dist",
+    "test": "echo \"The tests are not ready yet. Tests will come soon\""
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.1",
+    "@typescript-eslint/eslint-plugin": "^5.1.0",
+    "@typescript-eslint/parser": "^5.1.0",
+    "eslint": "7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "nodemon": "^2.0.15",
+    "prettier": "^2.4.1",
+    "typescript": "^4.4.4"
+  },
+  "keywords": [
+    "ts",
+    "typescript",
+    "node",
+    "NodeJs",
+    "template"
+  ]
+}
