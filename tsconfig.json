@@ -22,8 +22,19 @@
       "emitDecoratorMetadata": true,
       "experimentalDecorators": true,
       "resolveJsonModule": true,
-      "baseUrl": "."
+      "baseUrl": ".",
+      "allowJs": true,
+      "strict": true,
+      "forceConsistentCasingInFileNames": true,
+      "isolatedModules": false,
+      "noEmit": true,
+      "jsx": "react-jsx",
+      "strictPropertyInitialization": false
     },
-    "exclude": ["node_modules"],
+    "exclude": [
+      "node_modules",
+      "build",
+      "scripts"
+    ],
     "include": ["src/**/*.ts"]
 }
